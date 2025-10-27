@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oposia AI Chat</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #002b55, #005f99, #0099cc);
+      background-size: 300% 300%;
+      animation: gradientMove 10s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    header img {
+      height: 90px;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+
+    .chat-container {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      backdrop-filter: blur(8px);
+    }
+
+    iframe {
+      border: none;
+      border-radius: 15px;
+      width: 400px;
+      height: 70vh;
+      max-width: 90vw;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-oposia.png" alt="Logo Oposia" />
+    <h1>Tu Asistente Virtual de Oposia 💬</h1>
+  </header>
+
+  <div class="chat-container">
+    <iframe 
+      src="https://2ame1r2e.rcld.app/webhook/a27e58be-df0c-42ea-a38a-16e88e08fd2f/chat"
+      title="Chatbot Oposia">
+    </iframe>
+  </div>
+
+  <footer>© 2025 Oposia · Potenciado por BOTCRAFmaker ⚡</footer>
+</body>
+</html>
